@@ -37,7 +37,7 @@ public class CheckMethods {
     @Test
     public void testGetAllPosts(){
         String body = "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto";
-        List<HashMap> jsonResponse = getJSON(posts).jsonPath().getList("$");
+        List<HashMap> jsonResponse = getJSON(URI + posts).jsonPath().getList("$");
         Assert.assertEquals(jsonPlaceholder.getPostsCount(), jsonResponse.size());
         Assert.assertEquals(jsonResponse.get(0).get("body"), body);
     }
@@ -56,7 +56,7 @@ public class CheckMethods {
     @Test
     public void testGetAllComments(){
         String email = "Eliseo@gardner.biz";
-        List<HashMap> jsonResponse = getJSON(comments).jsonPath().getList("$");
+        List<HashMap> jsonResponse = getJSON(URI + comments).jsonPath().getList("$");
         Assert.assertEquals(jsonPlaceholder.getCommentsCount(), jsonResponse.size());
         Assert.assertEquals(jsonResponse.get(0).get("email"), email);
     }
@@ -65,7 +65,7 @@ public class CheckMethods {
     public void testGetOneComment(){
         int index = (int) (Math.random()* jsonPlaceholder.getCommentsCount());
         String validComment = String.format(comment, index);
-        int id = getJSON(validComment).jsonPath().get("id");
+        int id = getJSON(URI + validComment).jsonPath().get("id");
         Assert.assertEquals(id, index);
 
         String invalidComment = String.format(comment, index + jsonPlaceholder.getCommentsCount());
@@ -75,7 +75,7 @@ public class CheckMethods {
     @Test
     public void testGetAllUsers(){
         String email = "Sincere@april.biz";
-        List<HashMap> jsonResponse = getJSON(users).jsonPath().getList("$");
+        List<HashMap> jsonResponse = getJSON(URI + users).jsonPath().getList("$");
         Assert.assertEquals(jsonPlaceholder.getUsersCount(), jsonResponse.size());
         Assert.assertEquals(jsonResponse.get(0).get("email"), email);
     }
