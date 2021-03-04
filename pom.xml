@@ -11,7 +11,7 @@
     </properties>
 
     <groupId>groupId</groupId>
-    <artifactId>rest-api-test</artifactId>
+    <artifactId>rest-assured-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
