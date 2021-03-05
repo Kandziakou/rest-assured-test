@@ -11,7 +11,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class CheckMethods {
+public class CheckMethods extends BaseTest{
     private final JSONPlaceholder jsonPlaceholder = new JSONPlaceholder();
 
     private final String posts = jsonPlaceholder.getPosts();

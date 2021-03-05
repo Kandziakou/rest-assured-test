@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.4" level="project" />
     <orderEntry type="library" name="Maven: io.rest-assured:rest-assured:4.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:3.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-xml:3.0.7" level="project" />
@@ -29,9 +30,11 @@
     <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.4" level="project" />
     <orderEntry type="library" name="Maven: org.testng:testng:6.14.3" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Maven: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>
